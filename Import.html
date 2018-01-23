@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 4</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+        
+    </head>
+    <style>
+      table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+      }
+
+      td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+      }
+
+      tr:nth-child(even) {
+          background-color: #dddddd;
+      }
+
+
+  </style>
+    <body>
+        <h1>High-Fidelity Prototype</h1>
+         <ul class="topnav">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a class="active" href="Import.html">Import</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+        <div>  
+           <button class="fUpload"><span>Select File</span><input id="file" type="file" multiple onchange="fileselect()" class="upload"></button>
+           <button onclick="startread()"><span>Upload File</span></button>
+           <button id="Remove" onclick= "remove()">Remove</button>
+           
+           <h3>File contents:</h3>
+		      <pre>
+			     <code id="output"></code>
+              </pre>
+        </div>
+
+        <div id="Display">
+
+        </div>
+
+        <script src="Import.js"></script>
+    </body>
+</html>

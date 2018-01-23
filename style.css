@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+}
+
+h1{
+    background-color : #DDE0E3;
+    padding: 20px;
+    border: 1px solid black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+div {
+     padding: 20px;
+    margin: auto;
+}
+
+button {
+    background-color: white; 
+    border: 2px solid #008CBA;
+    border-radius: 8px ;
+    color: black;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+}
+button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+button.
+
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top: 0px;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #008CBA;}
+
+ul.topnav li a.active {background-color: #008CBA;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+
+
+.fUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#Header {
+    margin: 0px;
+    padding: 0px;
+}
