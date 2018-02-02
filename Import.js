@@ -3,22 +3,23 @@ function startread()
 {
   var file = document.getElementById('file').files[0];
   if(file)
-{ gettext(file);}
-     filename == file;
-}
-function gettext(readfile)
-{
-var reader;
-try
-{
+    {
+      gettext(file);}
+      filename == file;
+    }
+  function gettext(readfile)
+  {
+  var reader;
+  try
+   {
     reader = new FileReader();
-}catch(e)
-{
-document.getElementById('output').innerHTML = 
-"Error: Not supported on your browser";
-  return;
-  }
- reader.readAsText(readfile, "UTF-8");
+   }catch(e)
+   {
+    document.getElementById('output').innerHTML = 
+    "Error: Not supported on your browser";
+    return;
+   }
+  reader.readAsText(readfile, "UTF-8");
   reader.onload = load;
   reader.onerror = errorhnd;
 }
@@ -27,9 +28,11 @@ function fileselect()
       remove();
       var file = document.getElementById('file').files[0];
       if(file){
+       
           alert("File Selected Successfully");
-      }
+       }
       else{
+      
           alert("please select correct file type")
       }}
 function load(evt)
